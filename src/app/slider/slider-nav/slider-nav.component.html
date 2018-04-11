@@ -1,0 +1,12 @@
+<button
+  *ngIf="!sliderService.isLastSlide()"
+  (click)="nextSlide()"
+>
+  NEXT
+</button>
+<button
+  *ngIf="!sliderService.isFirstSlide()"
+  (click)="prevSlide()"
+>
+  BACK
+</button>
